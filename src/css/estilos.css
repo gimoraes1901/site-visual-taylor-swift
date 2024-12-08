@@ -1,0 +1,182 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../imagens/background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter:blur(8px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.taylor-swift {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.album-ts {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+
+    box-shadow: rgba(100, 100, 111, 0,2) 0px 7px 29px 0px;
+}
+
+.album-ts.aberto {
+    display: block;
+}
+
+.album-ts img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.album-ts .album-topo {
+    padding: 30px 40px 0;
+}
+
+.album-ts .nome {
+    margin-bottom: 5px;
+}
+
+.album-ts .tipo {
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.album-ts .detalhes {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album-ts .album-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.album-ts .album-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.album-ts .album-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.tipo-um {
+    background-color: #d1e5ce;
+}
+
+.tipo-dois {
+    background-color: #edcb90;
+}
+
+.tipo-tres {
+    background-color: #e0c7e2;
+}
+
+.tipo-quatro {
+    background-color: #aa6b7c;
+}
+
+.tipo-cinco {
+    background-color: #d0f0fb;
+}
+
+.tipo-seis {
+    background-color: #837c7f;
+}
+
+.tipo-sete {
+    background-color: #fcd8e6;
+}
+
+.tipo-oito {
+    background-color: #e1e0dc;
+}
+
+.tipo-nove {
+    background-color: #d2b69f;
+}
+
+.tipo-dez {
+    background-color: #40445b;
+}
+
+.tipo-onze {
+    background-color: #615b59;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .album img {
+    width: 25%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.listagem .album {
+    background-color: #6b727a;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .album:hover {
+    transform: scale(1.05);
+}
+
+.listagem .album span {
+    padding-right: 20px;
+}
+
+.listagem .album.ativo {
+    background-color: #2d2d2d;
+}
